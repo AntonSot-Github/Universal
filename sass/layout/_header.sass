@@ -1,0 +1,79 @@
+
+header
+    display: grid
+    grid-template-rows: 6rem 10rem
+
+
+.header-upperPart
+    display: grid
+    grid-template-columns: max-content 4fr max-content max-content
+    border-bottom: 2px solid $light-grey
+    &__section-menu
+        display: flex
+        align-items: center
+        border-right: 2px solid $light-grey
+        margin-right: 3.5rem
+        div
+            margin-right: 2rem
+            
+        p
+            font-weight: 600 
+            font-size: 1.7rem
+            margin-right: 3.5rem 
+    &__search-box
+        display: flex 
+        align-items: center
+        &--svg
+            width: 2rem
+            height: 2rem
+            margin-right: 1.5rem
+            cursor: pointer
+
+    &__subscribe-box
+        display: grid
+        grid-template-columns: min-content max-content
+        align-items: center
+        margin-right: 5.7rem
+        padding-top: .7rem
+        &--img 
+            width: 6.6rem
+            height: 4.4rem 
+            margin-right: 1rem 
+
+    &__sigh-box
+        display: flex 
+        align-items: center
+        justify-content: flex-end
+        &--svg 
+            width: 2rem
+            height: 2rem
+            margin-right: 1rem 
+
+    
+        
+
+
+.header-lowerPart
+    display: grid
+    grid-template-columns: min-content 2fr 3fr 2fr 1fr
+    align-items: center
+    img
+        height: 10rem
+        padding-left: 2.5rem
+        margin-right: 3.4rem
+    p
+        justify-self: start
+    &__svg-header
+        justify-self: center
+        height: 4rem 
+    &__date-box
+        justify-self: end
+
+    &__temperature
+        display: flex
+        justify-self: end 
+        &--sun 
+            width: 2rem
+            height: 2rem
+
+

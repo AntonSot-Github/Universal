@@ -1,0 +1,62 @@
+
+    
+.btn-menu
+    position: relative
+    width: 1.5rem
+    height: 2px
+    background-color: $light-grey
+    left: 0
+    &::before,
+    &::after
+        content: ""
+        width: 2.5rem
+        height: 2px
+        display: inline-block
+        background-color: $light-grey
+        position: absolute
+    &::before
+        left: 0
+        top: .6rem
+    &::after
+        left: 0
+        bottom: .6rem 
+    
+.read-more-btn
+    position: relative
+    display: flex 
+    color: $white 
+    text-decoration: none
+    padding: 1rem 2rem 
+    background-color: $blue 
+    border-radius: 2rem
+    transition: all .5s
+    p
+        position: relative
+        display: inline-block
+        color: $white 
+        margin-right: .8rem 
+    svg
+        width: 2rem
+        height: 2rem
+        transition: transform 0.5s 
+    &:hover 
+        transform: translateY(-0.5rem)
+    &:hover svg
+        transform: rotate(-360deg) translateX(0.9rem )
+
+
+.btn-movie
+    display: flex 
+    align-items: center
+    a
+        color: $white 
+        text-decoration: none         
+        &:not(:last-child)
+            margin-right: 1rem
+            opacity: 0.85
+            margin-bottom: 0.2rem 
+        &:last-child
+            span
+                opacity: 0.4
+        
+
